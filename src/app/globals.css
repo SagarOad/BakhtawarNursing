@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-bg {
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.3)),
+    url(../../src/assets/bakhtawarMannerImg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes growShrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.cta-button {
+  border: 2px solid white;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.25em;
+  color: white;
+  animation: growShrink 2s infinite;
+}
