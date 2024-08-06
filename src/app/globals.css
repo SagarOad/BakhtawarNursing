@@ -4,6 +4,14 @@
 
 .main-bg {
   background-repeat: no-repeat;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.3)),
+    url(../../src/assets/BannerImage1.png); */
+    background-image: url(../../src/assets/BannerImage2.png);
+  background-size: cover;
+  background-position: center;
+}
+.main-bg2 {
+  background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.3)),
     url(../../src/assets/bakhtawarMannerImg.jpg);
   background-size: cover;
@@ -20,12 +28,66 @@
 }
 
 .cta-button {
-  border: 2px solid white;
   text-align: center;
-  font-size: 23px;
-  font-weight: 600;
-  padding: 0.5em 1em;
-  margin: 0.5em 0.25em;
-  color: white;
+  /* font-size: 23px; */
+  /* font-weight: 600; */
+  /* padding: 0.5em 1em; */
+  /* margin: 0.5em 0.25em; */
   animation: growShrink 2s infinite;
+}
+
+.bgHeroFaculty{
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.3)),
+    url(../../src/assets/bakhtawarMannerImg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerInfo {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjusted to 70% of the viewport height */
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #320117b1; /* Adjust the color and opacity as needed */
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
 }
