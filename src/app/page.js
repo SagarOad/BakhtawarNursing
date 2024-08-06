@@ -5,6 +5,7 @@ import NursingHistory from "@/components/sections/NursingHistory";
 import OurFaculties from "@/components/sections/OurFaculties";
 import apply from "@/assets/apply.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
 
         <div className="w-full flex justify-center md:mt-[-80px] items-center">
           <div className=" bg-[#9a1b55] h-[200px] mx-2 w-[340px] p-2 border-white border-2 text-white text-[23px] font-semibold flex justify-center items-center">
-            <button className=" cta-button">
+            <Link href="admission-form" className=" cta-button">
               <Image
                 className=" mx-auto mb-4"
                 src={apply}
@@ -32,7 +33,7 @@ export default function Home() {
                 height={50}
               />
               <h2 className=" text-center">APPLY NOW</h2>
-            </button>
+            </Link>
           </div>
           <div className=" bg-[#9a1b55] h-[200px] mx-2 w-[340px] p-2 border-white border-2 text-white flex justify-center items-center">
             <div>

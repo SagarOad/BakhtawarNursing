@@ -141,7 +141,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/application-form"
+                  href="/admission-form"
                   className="block py-2 px-3 text-[21px] border-2 border-[#9a1b55] text-black rounded"
                 >
                   Apply Now
